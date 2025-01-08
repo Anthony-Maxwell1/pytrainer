@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pytrainer"
+version = "0.0.1"
+authors = [
+  { name="Anthony Maxwell", email="amaxwell4013@gmail.com" },
+]
+dependencies = [
+    "torch>=1.10",
+    "numpy>=1.21"
+]
+description = "AI made easy. Based on pytorch."
+readme = "README.md"
+requires-python = ">=3.9,<=3.12"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Anthony-Maxwell1/pytrainer"
+Issues = "https://github.com/Anthony-Maxwell1/pytrainer/issues"

@@ -1,0 +1,2 @@
+torch>=1.13.0  # Or the latest stable version available
+numpy>=1.21.0
