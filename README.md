@@ -59,7 +59,8 @@ print(response)
 - **Arguments**:
   - `input_text`: The text prompt to generate a response for (required).
   - `max_length`: The maximum length of the generated response (default is 50).
-  - `temperature`: Controls the randomness of the generated text (default is 0.5).
+  - `temperature`: Controls the randomness of the generated text (default is 0.7).
+  - `nearestPunctuation`: Should a word be rounded to the same word with different punctuation, if that word is not tokenized? (defualt is False)
 
 #### `save(self, path)`
 
@@ -70,3 +71,16 @@ print(response)
 
 - **Arguments**:
   - `path`: The file path from which to load the model data (required).
+
+#### Known Issues:
+
+(Fixed errors will be removed next update, and moved to change log in github.)
+
+- Exploding gradients during training of over 30 epochs, resulting in NaN errors when prompting. **FIXED**
+- When prompting, using an un-tokenized word will fail. **FIXED**
+  - Note: There is a new option to map un-tokenized words to the same word with different punctation, if one was tokenized. Otherwise, it will return nothing.
+
+#### Planned Features:
+
+- Individual classes for Tokenizers, allowing them to be customized.
+- Option for built-in tokenizers, so the trained model is backward compatible with pytorch.

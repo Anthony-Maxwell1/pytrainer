@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pytrainer"
-version = "0.0.1"
+version = "1.0.0"
 authors = [
   { name="Anthony Maxwell", email="amaxwell4013@gmail.com" },
 ]
@@ -16,7 +16,7 @@ description = "AI made easy. Based on pytorch."
 readme = "README.md"
 requires-python = ">=3.9,<=3.12"
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU General Public License (GPL)",
     "Operating System :: OS Independent",
