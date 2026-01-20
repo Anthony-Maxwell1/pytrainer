@@ -1,3 +1,6 @@
+> [!WARNING]
+> This is a project that was created in one or two afternoons as a learning experience and gateway into AI. Don't use it! Just use pytorch.
+
 # Pytrainer
 
 AI made Easy.
